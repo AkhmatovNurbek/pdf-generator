@@ -48,9 +48,9 @@ public class UserService {
         Document document = new Document(PageSize.A4);
         PdfWriter.getInstance(document, response.getOutputStream());
         document.open();
-        Font fontTiltle = FontFactory.getFont(FontFactory.TIMES_ROMAN);
-        fontTiltle.setSize(20);
-        Paragraph paragraph1 = new Paragraph("List of the Users", fontTiltle);
+        Font fontTitle = FontFactory.getFont(FontFactory.TIMES_ROMAN);
+        fontTitle.setSize(20);
+        Paragraph paragraph1 = new Paragraph("List of the Users", fontTitle);
         paragraph1.setAlignment(Paragraph.ALIGN_CENTER);
         document.add(paragraph1);
         PdfPTable table = new PdfPTable(7);
